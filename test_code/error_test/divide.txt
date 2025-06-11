@@ -1,0 +1,33 @@
+program TryCatchDemo {
+    func divide(x, y) {
+        let result = 0;
+        try {
+            result = x / y;
+        } catch {
+            result = -1;
+        }
+        return result;
+    }
+
+    main {
+        let a = 10;
+        let b = 0;
+        let c = 0;
+        c = divide(a, b);
+        output(c);
+
+        b = 2;
+        c = divide(a, b);
+        output(c);
+
+        try {
+            c = a / b;
+            output(c);
+        } catch {
+            output(-2);
+        }
+
+
+        output(0);
+    }
+}

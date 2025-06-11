@@ -1,0 +1,37 @@
+0 program Guess{
+0     func mod(a, b){
+2         let res = a - b * (a / b);
+11         return res;
+13     }
+13     func random(seed){
+15         let res = seed;
+18         let a = mod(seed * seed, 6759658);
+26         let c = mod(8675 * seed, 47655);
+34         let m = mod(875976 * 786458, seed);
+42         let cnt = 0;
+44         while (cnt < 1000) {
+48             res = mod(a * res + c, m);
+58             cnt = cnt + 1;
+62         }
+62         return res;
+65     }
+65     main{
+66         let seed = 0;
+69         let max = 1000;
+71         input(seed);
+73         let num = mod(random(seed), max);
+81         output(num);
+83         let in = 0;
+85         input(in);
+87         while(in != num){
+91             if(in > num){
+95                 output(1);
+97             }else{
+98                 output(0);
+100             };
+100             input(in);
+102         }
+102         output(in, num);
+107     }
+107 }
+===Parsing success!===

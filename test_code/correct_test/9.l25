@@ -1,0 +1,14 @@
+program Example {
+    main {
+        let a = 10;
+        let b = -5;
+        let c = 8;
+        let d = 88;
+        let res1 = a * b - c;
+        let res2 = a + b * c;
+        let res3 = d / c + a * b;
+        let res4 = (d + 12) * (-1 * a / b);
+        let res5 = (((res2 * res2 + 100) - 500) * 10 + 500) / c;
+        output(res1, res2, res3, res4, res5);
+    }
+}

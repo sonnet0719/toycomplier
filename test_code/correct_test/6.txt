@@ -1,0 +1,10 @@
+program TestFuncDefParam{
+    func testfunc(a, b, c){
+        let res = a + b - c;
+        return res;
+    }
+    main{
+        let a = testfunc(10, 2, 3);
+        output(a);
+    }
+}

@@ -1,0 +1,12 @@
+program TestFuncDefParam{
+    func testfunc(a){
+        let aaa = a+1;
+        return aaa+1;
+    }
+    main{
+        let a = 19;
+        output(a);
+        let res = testfunc(a);
+        output(a,res);
+    }
+}

@@ -1,0 +1,7 @@
+program TestOUT{
+    main{
+        let a = 2;
+        let b = 7;
+        output(a+b);
+    }
+}
