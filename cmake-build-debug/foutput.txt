@@ -1,37 +1,35 @@
-0 program Guess{
-0     func mod(a, b){
-2         let res = a - b * (a / b);
-11         return res;
-13     }
-13     func random(seed){
-15         let res = seed;
-18         let a = mod(seed * seed, 6759658);
-26         let c = mod(8675 * seed, 47655);
-34         let m = mod(875976 * 786458, seed);
-42         let cnt = 0;
-44         while (cnt < 1000) {
-48             res = mod(a * res + c, m);
-58             cnt = cnt + 1;
-62         }
-62         return res;
-65     }
-65     main{
-66         let seed = 0;
-69         let max = 1000;
-71         input(seed);
-73         let num = mod(random(seed), max);
-81         output(num);
-83         let in = 0;
-85         input(in);
-87         while(in != num){
-91             if(in > num){
-95                 output(1);
-97             }else{
-98                 output(0);
-100             };
-100             input(in);
-102         }
-102         output(in, num);
-107     }
-107 }
+0 program TryCatchDemo {
+0     func divide(x, y) {
+2         let result = 0;
+5         try {
+7             result = x / y;
+11         } catch {
+13             result = -1;
+16         }
+16         return result;
+19     }
+19 
+19     main {
+20         let a = 10;
+23         let b = 0;
+25         let c = 0;
+27         c = divide(a, b);
+33         output(c);
+35 
+35         b = 2;
+37         c = divide(a, b);
+43         output(c);
+45 
+45         try {
+47             c = a / b;
+51             output(c);
+53         } catch {
+55             output(-2);
+58         }
+58 
+58 
+58         output(0);
+61     }
+61 }
+62 
 ===Parsing success!===

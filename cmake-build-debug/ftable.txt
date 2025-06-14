@@ -1,16 +1,8 @@
-    1 func  mod addr=2 size=4
-    2 param a adr=3
-    3 param b adr=4
-    4 var   res ddr=5
-    5 func  random addr=15 size=7
-    6 param seed adr=3
-    7 var   res ddr=4
-    8 var   a ddr=5
-    9 var   c ddr=6
-    10 var   m ddr=7
-    11 var   cnt ddr=8
-    12 var   seed ddr=3
-    13 var   max ddr=4
-    14 var   num ddr=5
-    15 var   in ddr=6
+    1 func  divide addr=2 size=4
+    2 param x adr=3
+    3 param y adr=4
+    4 var   result ddr=5
+    5 var   a ddr=3
+    6 var   b ddr=4
+    7 var   c ddr=5
 
