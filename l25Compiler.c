@@ -1584,8 +1584,8 @@ void interpret()
 	int catchStack[stacksize];
 	int cTop = 0;
 
-	printf("Start pl0\n");
-	fprintf(fresult, "Start pl0\n");
+	printf("Start l25\n");
+	fprintf(fresult, "Start l25\n");
 	s[0] = 0; /* s[0]不用 */
 	s[1] = 0; /* 主程序的三个联系单元均置为0 */
 	s[2] = 0;
@@ -1760,6 +1760,6 @@ void interpret()
 			fprintf(fresult, "\n");
 		} /*输出所有栈*/
 	} while (p != 0);
-	printf("End pl0\n");
-	fprintf(fresult, "End pl0\n");
+	printf("\nEnd l25\n");
+	fprintf(fresult, "\nEnd l25\n");
 }
